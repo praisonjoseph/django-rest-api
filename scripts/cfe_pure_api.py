@@ -22,7 +22,7 @@ def create_update():
     new_data = {
         'user': 1,
         "content": "Some more new cool update"
-    }
+    } 
     r = requests.post(BASE_URL + ENDPOINT, data=json.dumps(new_data))
     print(r.status_code)
     print(r.headers)
